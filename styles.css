@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+.livros-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os livros se movam para a próxima linha se não couberem */
+    justify-content: space-around; /* Distribui os livros uniformemente na linha */
+}
+
+.livro-item {
+    width: 300px; /* Largura fixa para cada livro */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.livro-item:hover {
+    transform: scale(1.05);
+}
+
+.Capa_livro {
+    width: 100%;
+    height: auto;
+}
+
+.livro-info {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* ... (seu código existente) ... */
+
+.livro-item {
+    position: relative; /* Permite posicionar elementos filhos em relação a este elemento pai */
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.livro-info-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.livro-item:hover .livro-info-overlay {
+    opacity: 1;
+}
+
+/* ... (seu código existente) ... */
