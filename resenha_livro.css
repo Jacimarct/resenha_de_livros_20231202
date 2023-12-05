@@ -41,15 +41,6 @@ main {
     border-bottom: 1px solid #ddd; /* Adicione uma linha separadora entre a imagem e as informações */
 }
 
-/* Adicione estilos para o card do livro */
-/* .livro-card { */
-/*    border: 1px solid #ddd; /* Adiciona uma borda fina ao redor do card */
- /*   border-radius: 8px; /* Adiciona bordas arredondadas ao card */
- /*   overflow: hidden; /* Garante que o conteúdo dentro do card não ultrapasse as bordas arredondadas */
- /*   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil para dar destaque */
- /*   transition: transform 0.2s ease-in-out; /* Adiciona uma transição suave ao card */
-/* } */
-
 .livro-card {
     border: 1px solid #ddd; /* Adicione uma borda para destacar os cards */
     border-radius: 8px; /* Borda arredondada */
@@ -65,8 +56,26 @@ main {
 
 /* Modifique o CSS para a lista de livros */
 
+/* .livro-info {
+    padding: 15px;
+} */
 .livro-info {
     padding: 15px;
+    overflow: hidden; /* Adiciona um overflow escondido para esconder a sinopse completa */
+    transition: height 0.3s ease-in-out; /* Adiciona uma transição suave na altura */
+}
+
+.expandido-sinopse {
+    height: auto; /* Define a altura para automático ao expandir */
+}
+
+.livro-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.livro-buttons button {
+    margin: 5px;
 }
 
 h1 {
